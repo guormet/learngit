@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>响应式BootStrop</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        ul,li{
+            margin:0;
+            padding:0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Spider-man</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+                </ul>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Harry</a></li>
+                        <li><a href="#">Alen</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Uber <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Jastin</a></li>
+                                <li><a href="#">Talen</a></li>
+                                <li><a href="#">Jasper</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Others</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">the Other</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="alert alert-warning">
+        <a href="#" class="close" data-dismiss="alert">
+            &times;
+        </a>
+        <strong>警告！</strong>您的网络连接有问题。
+    </div>
+    <section>
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="res/img/pho1.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="res/img/pho2.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img src="res/img/pho3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next">&rsaquo;</a>
+        </div>
+        <hr>
+        <div class="container">
+            <form class="bs-example bs-example-form" role="form">
+                <div class="row" style="padding-bottom:20px ">
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default form-control" type="button">
+                                    Go!
+                                </button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </form>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3" style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium.
+                    </p>
+
+                    <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi
+                        tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem.
+                    </p>
+                </div>
+                <div class="col-md-3" style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium.
+                    </p>
+
+                    <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi
+                        tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem.
+                    </p>
+                </div>
+                <div class="col-md-3" style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium.
+                    </p>
+
+                    <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi
+                        tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem.
+                    </p>
+                </div>
+                <div class="col-md-3" style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium.
+                    </p>
+
+                    <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi
+                        tempora incidunt ut labore et dolore magnam aliquam quaerat
+                        voluptatem.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <table class="table table-hover">
+                <caption>产品信息</caption>
+                <thead>
+                <tr>
+                    <th>产品</th>
+                    <th>付款日期</th>
+                    <th>状态</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="active">
+                    <td>产品1</td>
+                    <td>23/11/2017</td>
+                    <td>待发货</td>
+                </tr>
+                <tr class="success">
+                    <td>产品2</td>
+                    <td>10/11/2017</td>
+                    <td>发货中</td>
+                </tr>
+                <tr  class="warning">
+                    <td>产品3</td>
+                    <td>20/10/2017</td>
+                    <td>待确认</td>
+                </tr>
+                <tr  class="danger">
+                    <td>产品4</td>
+                    <td>20/10/2017</td>
+                    <td>已退货</td>
+                </tr>
+                </tbody>
+            </table>
+            <ul class="pagination col-md-offset-3">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+            <hr>
+        </div>
+        <div class="container">
+            <form role="form" id="pro">
+                <div class="form-group">
+                    <label for="name">产品名称</label>
+                    <p> <input type="text" class="form-control" placeholder="请输入产品名称"></p>
+                    <label for="name">付款日期</label>
+                    <p> <input type="date" class="form-control"></p>
+                    <label for="name">产品状态</label>
+                    <p><select  class="form-control">
+                        <option value ="volvo" selected>请选择状态</option>
+                        <option value ="saab">发货中</option>
+                        <option value="opel">待确认</option>
+                        <option value="audi">已退货</option>
+                    </select></p>
+                    <p><button type="button" class="btn btn-info btn-block">确定</button></p>
+                </div>
+            </form>
+
+        </div>
+        <hr>
+        <div class="container">
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab">Android</a></li>
+            <li><a href="#ios" data-toggle="tab">iOS</a></li>
+            <li class="dropdown">
+                <a href="#" id="myTabDrop1" class="dropdown-toggle"data-toggle="dropdown">塞班
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                    <li><a href="#nokia" tabindex="-1" data-toggle="tab">诺基亚</a></li>
+                    <li><a href="#nubia" tabindex="-1" data-toggle="tab">努比亚</a></li>
+                </ul>
+            </li>
+        </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="home">
+                    <p>Android是一种基于Linux的自由及开放源代码的操作系统，主要使用于移动设备，如智能手机和平板电脑，由Google公司和开放手机联盟领导及开发。尚未有统一中文名称，中国大陆地区较多人使用“安卓”或“安致”。Android操作系统最初由Andy Rubin开发，主要支持手机。2005年8月由Google收购注资。2007年11月，Google与84家硬件制造商、软件开发商及电信营运商组建开放手机联盟共同研发改良Android系统。随后Google以Apache开源许可证的授权方式，发布了Android的源代码。第一部Android智能手机发布于2008年10月。Android逐渐扩展到平板电脑及其他领域上，如电视、数码相机、游戏机等。2011年第一季度，Android在全球的市场份额首次超过塞班系统，跃居全球第一。 2013年的第四季度，Android平台手机的全球市场份额已经达到78.1%。 2013年09月24日谷歌开发的操作系统Android在迎来了5岁生日，全世界采用这款系统的设备数量已经达到10亿台。</p>
+                </div>
+                <div class="tab-pane fade" id="ios">
+                    <p>iOS是由苹果公司开发的移动操作系统。苹果公司最早于2007年1月9日的Macworld大会上公布这个系统，最初是设计给iPhone使用的，后来陆续套用到iPod touch、iPad以及Apple TV等产品上。iOS与苹果的Mac OS X操作系统一样，属于类Unix的商业操作系统。原本这个系统名为iPhone OS，因为iPad，iPhone，iPod touch都使用iPhone OS，所以2010WWDC大会上宣布改名为iOS（iOS为美国Cisco公司网络设备操作系统注册商标，苹果改名已获得Cisco公司授权）。
+                        2016年1月，随着9.2.1版本的发布，苹果修复了一个存在了3年的漏洞。该漏洞在iPhone或iPad用户在酒店或者机场等访问带强制门户的网络时，登录页面会通过未加密的HTTP连接显示网络使用条款。在用户接受条款后，即可正常上网，但嵌入浏览器会将未加密的Cookie分享给Safari浏览器。利用这种分享的资源，黑客可以创建自主的虚假强制门户，并将其关联至WiFi网络，从而窃取设备上保存的任何未加密Cookie。</p>
+                </div>
+                <div class="tab-pane fade" id="nokia">
+                    <p>诺基亚（Nokia Corporation）是一家总部位于芬兰埃斯波 ，主要从事移动通信产品生产的跨国公司。诺基亚成立于1865年，当时以造纸为主业，后来逐步向胶鞋、轮胎、电缆等领域扩展，最后发展成为一家手机制造商。
+                        自1996年以来，诺基亚连续14年占据市场份额第一。面对新操作系统的智能手机的崛起，诺基亚全球手机销量第一的地位在2011年第二季被苹果及三星双双超越。2011年2月11日，诺基亚与微软达成全球战略同盟并深度合作共同研发Windows Phone操作系统。2013年7月11日，拥有4100万像素的诺基亚Lumia 1020正式在纽约发布亮相。同年9月3日，微软宣布以约54.4亿欧元价格收购诺基亚设备与服务部门（诺基亚手机业务），并获得相关专利和品牌的授权。诺基亚未来将努力发展Here地图服务、诺基亚解决方案与网络（NSN）和领先科技三大支柱业务。2014年4月25日，诺基亚宣布完成与微软公司的手机业务交易，正式将设备与服务业务出售给微软后，正式退出手机市场；同日，诺基亚任命拉吉夫·苏里（Rajeev Suri）担任诺基亚总裁兼CEO。 2014年11月18日，诺基亚正式发布第一款Android平板电脑，诺基亚N1（Nokia N1）。诺基亚N1 是Android系统上首款支持USB正反插（USB-typeC）的设备。今后诺基亚将致力于移动网络基础设施软件和服务、测绘导航和智能定位、先进技术研发及授权。2015年11月18日，诺基亚正式启动166亿美元收购阿尔卡特-朗讯。2016年5月18日，诺基亚与芬兰企业HMD签署独家10年期授权协议</p>
+                </div>
+                <div class="tab-pane fade" id="nubia">
+                    <p>E努比亚（nubia），新锐智能手机品牌，定位高端市场，立足中国面向全球，以“Be Yourself”为品牌理念。努比亚手机产品拥有诸多单反级摄影功能，被称为“可以拍星星的手机”。努比亚在业内首创了“全网通”，并通过搭载FiT交互技术的全球首款“无边框手机”nubia Z9为广大用户认可。世界足坛巨星C·罗纳尔多任努比亚品牌代言人。[1]
+                        努比亚旗下智能手机包括Z、My（布拉格系列）、X和N四个系列[2]  ，业务范围覆盖中国、北美、南美、北欧、俄罗斯、东南亚、印度等市场。
+                    </p>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseOne">
+                                蜘蛛侠的 the first enemy
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseTwo">
+                                蜘蛛侠的 the second enemy
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseThree">
+                                蜘蛛侠的 the third enemy
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                            vice lomo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p style="text-align: center">@copyright 2017</p>
+    </footer>
+</body>
+</html>
